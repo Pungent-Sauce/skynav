@@ -17,8 +17,6 @@
  *
  * If not, see <http://www.gnu.org/licenses/>.
  *
- * BMP388 Driver author: Dominic Clifton
- *
  * References:
  * BMP388 datasheet - https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BMP388-DS001.pdf
  * BMP3-Sensor-API - https://github.com/BoschSensortec/BMP3-Sensor-API
