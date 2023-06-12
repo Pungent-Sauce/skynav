@@ -17,8 +17,6 @@
  *
  * If not, see <http://www.gnu.org/licenses/>.
  *
- * bmp390 Driver author: Dominic Clifton
- * INAV port: Michel Pastor
  */
 
 #include <stdbool.h>
@@ -39,7 +37,7 @@
 
 #if defined(USE_BARO) && (defined(USE_BARO_bmp390) || defined(USE_BARO_SPI_bmp390))
 
-#define bmp390_I2C_ADDR                                 (0x76) // same as BMP280/BMP180
+#define bmp390_I2C_ADDR                                 (0x77) // same as BMP280/BMP180 breakout boards
 #define bmp390_DEFAULT_CHIP_ID                          (0x50) // from https://github.com/BoschSensortec/BMP3-Sensor-API/blob/master/bmp3_defs.h#L130
 
 #define bmp390_CMD_REG                                  (0x7E)
@@ -335,7 +333,7 @@ bool bmp390Detect(baroDev_t *baro)
         busDeviceDeInit(baro->busDev);
         return false;
     }
-
+    
     // read calibration
     if (baro->busDev->busType == BUSTYPE_SPI) {
         // In SPI mode, first byte read is a dummy byte
