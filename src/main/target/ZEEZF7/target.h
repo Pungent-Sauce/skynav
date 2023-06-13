@@ -118,7 +118,7 @@
 #define USE_BARO_BMP388
 #define USE_BARO_DPS310
 
-#define BARO_I2C_BUS            BUS_I2C1
+#define BARO_I2C_BUS            BUS_I2C3
 
 #define USE_I2C_DEVICE_1
 #define I2C1_SCL                PB8
