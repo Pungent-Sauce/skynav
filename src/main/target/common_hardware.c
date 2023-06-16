@@ -115,7 +115,7 @@
     #if !defined(BMP388_I2C_BUS)
         #define BMP388_I2C_BUS BARO_I2C_BUS
     #endif
-    BUSDEV_REGISTER_I2C(busdev_bmp388,      DEVHW_BMP388,       BMP388_I2C_BUS,     0x76,               NONE,           DEVFLAGS_NONE,      0);
+    BUSDEV_REGISTER_I2C(busdev_bmp388,      DEVHW_BMP388,       BMP388_I2C_BUS,     0x77,               NONE,           DEVFLAGS_NONE,      0);
     #endif
 #endif
 
